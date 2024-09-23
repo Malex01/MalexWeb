@@ -1,17 +1,117 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TBD</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cyber Webpage</title>
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #0d0d0d;
+            color: #ffffff;
+            overflow: hidden;
+        }
+
+        /* Neon glowing text */
+        h1 {
+            text-align: center;
+            font-size: 4rem;
+            color: #00ffcc;
+            text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 40px #00ffcc, 0 0 80px #00ffcc;
+            margin-top: 20%;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #ff66cc;
+            text-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc, 0 0 40px #ff66cc;
+        }
+
+        /* Glowing lines */
+        .neon-line {
+            width: 90%;
+            height: 2px;
+            background: linear-gradient(90deg, rgba(0,255,204,1) 0%, rgba(255,102,204,1) 100%);
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.75), 0 0 25px rgba(255, 102, 204, 0.75);
+            margin: 20px auto;
+        }
+
+        /* Floating cyber icons */
+        .cyber-icon {
+            position: absolute;
+            background: #00ffcc;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            opacity: 0.7;
+            animation: float 8s infinite ease-in-out;
+        }
+
+        .cyber-icon:nth-child(1) { top: 10%; left: 10%; }
+        .cyber-icon:nth-child(2) { top: 30%; left: 60%; animation-delay: 2s; }
+        .cyber-icon:nth-child(3) { top: 70%; left: 20%; animation-delay: 4s; }
+        .cyber-icon:nth-child(4) { top: 50%; left: 80%; animation-delay: 6s; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Animation for page load */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        body {
+            animation: fadeIn 3s ease-in;
+        }
+
+        /* Button styling */
+        .enter-button {
+            display: block;
+            margin: 40px auto;
+            padding: 15px 40px;
+            font-size: 1.5rem;
+            background-color: #00ffcc;
+            color: #0d0d0d;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 0 15px #00ffcc, 0 0 30px #00ffcc;
+            transition: all 0.3s ease;
+        }
+
+        .enter-button:hover {
+            background-color: #ff66cc;
+            box-shadow: 0 0 20px #ff66cc, 0 0 40px #ff66cc;
+        }
+    </style>
 </head>
-<a href="page2.html" target="_self">Public PGP Key</a>
-<a href="page3.html" target="_self">    1</a>
-<a href="page4.html" target="_self">    2</a>
-<a href="page5.html" target="_self">    3</a>
-
-
-<hr>
 <body>
+
+    <h1>Welcome to My Cyber World</h1>
+    <h2>The future is now</h2>
+
+    <!-- Neon lines -->
+    <div class="neon-line"></div>
+
+    <!-- Floating cyber icons -->
+    <div class="cyber-icon"></div>
+    <div class="cyber-icon"></div>
+    <div class="cyber-icon"></div>
+    <div class="cyber-icon"></div>
+
+    <!-- Neon lines -->
+    <div class="neon-line"></div>
+
+    <!-- Call to action button -->
+    <a href="#" class="enter-button">Enter</a>
 
 </body>
 </html>
